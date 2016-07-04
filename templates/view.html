@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ニュース</title>
+</head>
+<body>
+<h1>ニュース詳細</h1>
+<h2>No.{$article.id} {$article.title|escape}</h2>
+<p>{$article.detail|escape|nl2br}</p>
+<p>投稿日時：{$article.created}</p>
+<ul>
+  <li><a href="edit_form.php?id={$article.id}">編集</a></li>
+  <li><a href="delete_form.php?id={$article.id}">削除</a></li>
+</ul>
+<ul>
+  <li><a href="index.php">一覧へ戻る</a></li>
+</ul>
+</body>
+</html>
