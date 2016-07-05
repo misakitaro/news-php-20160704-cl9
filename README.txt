@@ -30,4 +30,6 @@
      * [client]  
       - default-character-set=utf8 #clientセクションを追加
 
-* git-hubからワークスペースを作成した直後は、command.sqlの内容を打ち込むこと。打ち込むためのmysqlの起動は記の「cloud9でのmysqlの使い方」参照
+* git-hubからワークスペースを作成直後は、MySQLでDB作成を行うこと。
+ - command.sqlの内容を打ち込むこと。
+ - 打ち込むためのmysqlの起動は上記の「cloud9でのmysqlの使い方」参照
