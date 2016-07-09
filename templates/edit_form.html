@@ -2,25 +2,50 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
   <title>ニュース</title>
 </head>
 
 <body>
-  <h1>ニュース編集</h1>
-  <form action="edit.php" method="post">
-    <input type="hidden" name="id" value="{$article.id}" /> タイトル：
-    <br />
-    <input type="text" name="title" size="30" value="{$article.title|escape}" /><br /> 本文：
-    <br />
-    <textarea name="detail" cols="30" rows="5">{$article.detail|escape}</textarea><br /> パスワード：
-    <br />
-    <input type="password" name="key" size="10" value="" /><br />
-    <br />
-    <input type="submit" value="編集する" />
-  </form>
-  <ul>
-    <li><a href="view.php?id={$article.id}">記事へ戻る</a></li>
-  </ul>
+  <div class="container" style="padding:20px 0">
+    <!-- タイトル -->
+    <h1 class="bg-primary">ニュース編集</h1>
+
+    <form action="edit.php" method="post">
+      <input type="hidden" name="id" value="{$article.id}" class="form-control" />
+      <div class="form-group">
+        <label>タイトル</label>
+        <input type="text" name="title" size="30" value="{$article.title|escape}" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>本文</label>
+        <textarea name="detail" cols="30" rows="5" class="form-control">{$article.detail|escape}</textarea>
+      </div>
+      <div class="form-group">
+        <label>パスワード</label>
+        <input type="password" name="key" size="10" value="" class="form-control" />
+      </div>
+      <button class="btn btn-primary">編集する</button> 
+    </form>
+
+    <!--<ul>-->
+    <!--  <li><a href="view.php?id={$article.id}">記事へ戻る</a></li>-->
+    <!--</ul>-->
+
+    <!-- リンク -->
+    <a href="view.php?id={$article.id}" class="btn btn-primary">記事へ戻る</a>
+
+  </div>
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
 </html>

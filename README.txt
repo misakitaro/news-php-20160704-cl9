@@ -33,3 +33,9 @@
 * git-hubからワークスペースを作成直後は、MySQLでDB作成を行うこと。
  - command.sqlの内容を打ち込むこと。
  - 打ち込むためのmysqlの起動は上記の「cloud9でのmysqlの使い方」参照
+ 
+* bootstrap化
+  1. headerにlinkをコピペ
+  2. bodyの閉じタグ直前にscript
+  3. コンテナクラスのdivで全体を囲み、タイトル行を最初に記述
+  4. リンクとサブミットをボタン化。
