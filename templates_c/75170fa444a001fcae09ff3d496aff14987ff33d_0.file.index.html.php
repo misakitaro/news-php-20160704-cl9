@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-07-05 13:41:36
+/* Smarty version 3.1.28, created on 2016-07-09 12:08:29
   from "/home/ubuntu/workspace/templates/index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_577bb910f11dc0_84664500',
+  'unifunc' => 'content_5780e93d7dd3b2_48230707',
   'file_dependency' => 
   array (
     '75170fa444a001fcae09ff3d496aff14987ff33d' => 
     array (
       0 => '/home/ubuntu/workspace/templates/index.html',
-      1 => 1467726092,
+      1 => 1468066106,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_577bb910f11dc0_84664500 ($_smarty_tpl) {
+function content_5780e93d7dd3b2_48230707 ($_smarty_tpl) {
 ?>
 <html lang="ja">
 
@@ -34,7 +34,10 @@ function content_577bb910f11dc0_84664500 ($_smarty_tpl) {
 
 <body>
   <div class="container" style="padding:20px 0">
-    <h1>ニュース一覧</h1>
+    <!-- タイトル -->
+    <h1 class="pull-right bg-primary">ニュース一覧</h1>
+
+    <!-- シンプルな表示
     <ul>
       <?php
 $_from = $_smarty_tpl->tpl_vars['articles']->value;
@@ -61,8 +64,9 @@ $_smarty_tpl->tpl_vars['article'] = $__foreach_article_0_saved_item;
 }
 ?>
     </ul>
-
-    <table class="table table-bordered table-hover">
+    --->
+    
+    <table class="table table-striped">
       <thread>
         <tr>
           <th>id</th>
@@ -82,7 +86,7 @@ if ($__foreach_article_1_total) {
 foreach ($_from as $_smarty_tpl->tpl_vars['article']->value) {
 $__foreach_article_1_saved_local_item = $_smarty_tpl->tpl_vars['article'];
 ?>
-        <tr class="success">
+        <tr>
           <td><a href="view.php?id=<?php echo $_smarty_tpl->tpl_vars['article']->value['id'];?>
 ">No.<?php echo $_smarty_tpl->tpl_vars['article']->value['id'];?>
 </a></td>

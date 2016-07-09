@@ -11,14 +11,18 @@
 
 <body>
   <div class="container" style="padding:20px 0">
-    <h1>ニュース一覧</h1>
+    <!-- タイトル -->
+    <h1 class="pull-right bg-primary">ニュース一覧</h1>
+
+    <!-- シンプルな表示
     <ul>
       {foreach $articles as $article}
       <li><a href="view.php?id={$article.id}">No.{$article.id} {$article.title|escape}</a></li>
       {/foreach}
     </ul>
-
-    <table class="table table-bordered table-hover">
+    --->
+    
+    <table class="table table-striped">
       <thread>
         <tr>
           <th>id</th>
@@ -27,7 +31,7 @@
       </thread>
       <tbody>
         {foreach $articles as $article}
-        <tr class="success">
+        <tr>
           <td><a href="view.php?id={$article.id}">No.{$article.id}</a></td>
           <td><a href="view.php?id={$article.id}"> {$article.title|escape}</a></td>
         </tr>
