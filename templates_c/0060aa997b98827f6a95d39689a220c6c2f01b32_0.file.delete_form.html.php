@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-07-09 15:10:47
+/* Smarty version 3.1.28, created on 2016-07-09 15:18:03
   from "/home/ubuntu/workspace/templates/delete_form.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_578113f7731269_49024205',
+  'unifunc' => 'content_578115ab88eff8_20520453',
   'file_dependency' => 
   array (
     '0060aa997b98827f6a95d39689a220c6c2f01b32' => 
     array (
       0 => '/home/ubuntu/workspace/templates/delete_form.html',
-      1 => 1468076901,
+      1 => 1468077461,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_578113f7731269_49024205 ($_smarty_tpl) {
+function content_578115ab88eff8_20520453 ($_smarty_tpl) {
 ?>
 <html>
 
@@ -45,9 +45,9 @@ function content_578113f7731269_49024205 ($_smarty_tpl) {
       <br />
       <input type="password" name="key" size="10" value="" /><br />
       <br />
-      <input type="submit" value="削除する" />
+      <button class="btn btn-primary">削除する</button>
     </form>
-    
+
     <a href="view.php?id=<?php echo $_smarty_tpl->tpl_vars['article']->value['id'];?>
 " class="btn btn-primary">記事へ戻る</a>
 
