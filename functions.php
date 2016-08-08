@@ -36,3 +36,20 @@ function emailExists($email, $dbh) {
 function getSha1Password($s) {
     return (sha1(PASSWORD_KEY.$s));
 }
+
+function require_login(){
+    session_start();
+    if (empty($_SESSION['me'])) {
+        header('Location: '.SITE_URL.'login.php');
+        exit;
+    }
+    $me = $_SESSION['me'];
+}
+
+function require_unlogin(){
+    session_start();
+    if (!empty($_SESSION['me'])) {
+        header('Location: '.SITE_URL.'');
+        exit;
+    }
+}

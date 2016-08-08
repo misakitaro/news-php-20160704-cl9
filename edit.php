@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
 require_once 'functions.php';
+require_login();
 
 //入力内容チェック
 if ($_POST['key'] != 'abcd') {

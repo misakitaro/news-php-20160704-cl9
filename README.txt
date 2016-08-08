@@ -1,3 +1,5 @@
+* このメモは下が新しいメモ。
+
 * 以下のサイトをcloud9上で動かしてみる。
   [参考URL]ニュース投稿ツール（MySQL + PDO + Smarty を利用）http://www.php-labo.net/tutorial/example/news.html
   
@@ -39,3 +41,5 @@
   2. bodyの閉じタグ直前にscript
   3. コンテナクラスのdivで全体を囲み、タイトル行を最初に記述
   4. リンクとサブミットをボタン化。
+
+* ログイン機能を追加。参考＝sns_php_v2,surasura

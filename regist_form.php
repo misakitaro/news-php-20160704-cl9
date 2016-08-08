@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
 require_once 'functions.php';
+require_login();
 
 $smarty = new Smarty();
 $smarty->template_dir = 'templates/';

@@ -16,10 +16,10 @@ define('DB_PASSWORD', 'dbuserpassword');
 /*
  * common
  */
-define('SITE_URL', 'http://localhost/study.localhost/');
+define('SITE_URL', 'https://news-php-20160704-cl9-cloned-misakitaro.c9users.io/');
 error_reporting(E_ALL & ~E_NOTICE);
 //error_reporting(0); //Warningを非表示の設定
- session_set_cookie_params(0, '/study.localhost/');
+ session_set_cookie_params(0, '/');
 
 
 /*
