@@ -43,3 +43,22 @@
   4. リンクとサブミットをボタン化。
 
 * ログイン機能を追加。参考＝sns_php_v2,surasura
+
+1. ファイル： command.sql
+　 内容:      usersテーブルを追加。
+　 
+2. ファイル： command.sql
+　 内容:      コンソールでmysqlを立ち上げてcomman.sqlを反映
+
+3. ファイル： config.php
+　 内容:      SITE_URLを変更を修正。
+
+4. ファイル： functions.php
+　 内容:      require_login(),require_unlogin()を追加。
+
+5. ファイル： ほぼ全てのphpファイル
+　 内容:      require_login();,require_unlogin();を追加。
+
+6. ファイル： login.php,logout.php,signup.php
+　 内容:      新たに作成（コピペ）
+
