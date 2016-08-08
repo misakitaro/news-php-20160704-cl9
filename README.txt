@@ -58,3 +58,5 @@
   　 内容:      新たに作成（コピペ）
   7. ファイル： index.php(正確にはindex.htmlの方)等
   　 内容:      logout.phpへのリンクを作成
+
+* TODO:CSRF対策

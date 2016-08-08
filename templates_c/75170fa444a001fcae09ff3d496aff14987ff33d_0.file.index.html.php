@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.28, created on 2016-08-08 13:35:48
+/* Smarty version 3.1.28, created on 2016-08-08 14:48:03
   from "/home/ubuntu/workspace/templates/index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.28',
-  'unifunc' => 'content_57a88ab47763a0_23074856',
+  'unifunc' => 'content_57a89ba37180e6_40475645',
   'file_dependency' => 
   array (
     '75170fa444a001fcae09ff3d496aff14987ff33d' => 
     array (
       0 => '/home/ubuntu/workspace/templates/index.html',
-      1 => 1470663343,
+      1 => 1470667635,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57a88ab47763a0_23074856 ($_smarty_tpl) {
+function content_57a89ba37180e6_40475645 ($_smarty_tpl) {
 ?>
 <html lang="ja">
 
@@ -106,8 +106,8 @@ $_smarty_tpl->tpl_vars['article'] = $__foreach_article_1_saved_item;
     </table>
   
     <!-- リンク -->
-    <a href="regist_form.php" class="btn btn-primary">登録</a></li>
-    <a href="logout.php" class="btn btn-primary">ログアウト</a></li>
+    <a href="regist_form.php" class="btn btn-primary">登録</a>
+    <a href="logout.php" class="btn btn-primary">ログアウト</a>
    
   </div>
   <!-- jquery -->
