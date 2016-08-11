@@ -29,3 +29,4 @@ require_once '/home/ubuntu/workspace/libs/Smarty.class.php';
 $smarty = new Smarty();
 $smarty->template_dir = 'templates/';
 $smarty->compile_dir  = 'templates_c/';
+$smarty->default_modifiers = array('escape:"html"');
